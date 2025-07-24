@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import {
   HomeTitle,
-  WallTakerAd,
   ReleaseNotes,
   AgeWarning,
   Introduction,
@@ -34,7 +33,6 @@ export const HomePage = () => {
         <AgeWarning />
         <Introduction />
         <SettingsSection />
-        <WallTakerAd />
         <VersionDisplay />
         <ReleaseNotes />
         <Instructions />
