@@ -1,11 +1,9 @@
 import styled from 'styled-components';
 import { SettingsTile, TabBar } from '../../common';
 import { useState } from 'react';
-import { WalltakerSearch } from '../../walltaker';
 import { LocalImport } from '../../local';
 
 const tabs: Record<string, React.ReactNode> = {
-  walltaker: <WalltakerSearch />,
   local: <LocalImport />,
 };
 
@@ -26,7 +24,6 @@ export const ServiceSettings = () => {
       label={
         <TabBar
           tabs={[
-            // { id: 'walltaker', content: 'Walltaker' },
             { id: 'local', content: 'Device' },
           ]}
           current={activeTab}
