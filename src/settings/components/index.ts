@@ -7,5 +7,6 @@ export * from './ImageSettings';
 export * from './PaceSettings';
 export * from './PlayerSettings';
 export * from './ServiceSettings';
+export * from './ImageSettings';
 export * from './TradeSettings';
 export * from './VibratorSettings';

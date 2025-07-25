@@ -22,7 +22,6 @@ const StyledImageActions = styled.div`
   display: flex;
   justify-content: space-between;
   grid-column: 1 / -1;
-
   margin-bottom: 8px;
 `;
 
@@ -35,7 +34,8 @@ const SmallActionButton = styled(IconButton)`
   color: var(--color-text);
 `;
 
-export const ImageSettings = () => {
+// Contenu des paramètres d'images sans wrapper SettingsTile
+export const ImageSettingsContent = () => {
   const [images, setImages] = useImages();
   const { removeImage } = useLocalImages();
   const [selected, setSelected] = useState<ImageItem[]>([]);
@@ -43,7 +43,7 @@ export const ImageSettings = () => {
   const [videoSound] = useSetting('videoSound');
 
   return (
-    <SettingsTile label='Images' style={{ gridColumn: '1 / -1' }}>
+    <>
       <StyledImageActions>
         <p>{`You have loaded ${images.length} images`}</p>
         <StyledImageButtons>
@@ -115,6 +115,15 @@ export const ImageSettings = () => {
         />
       </ImageDialog>
       <Space size='medium' />
+    </>
+  );
+};
+
+// Version originale avec SettingsTile pour compatibilité
+export const ImageSettings = () => {
+  return (
+    <SettingsTile label='Images' style={{ gridColumn: '1 / -1' }}>
+      <ImageSettingsContent />
     </SettingsTile>
   );
 };

@@ -7,7 +7,6 @@ import {
   PaceSettings,
   PlayerSettings,
   ServiceSettings,
-  ImageSettings,
   BoardSettings,
   VibratorSettings,
   TradeSettings,
@@ -31,7 +30,6 @@ export const SettingsSection = () => {
       <BoardSettings />
       <TradeSettings />
       <ServiceSettings />
-      <ImageSettings />
       <VibratorSettings />
     </StyledSettingsSection>
   );
