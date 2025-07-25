@@ -29,10 +29,10 @@ export const SettingsSection = () => {
       <HypnoSettings />
       <ClimaxSettings />
       <BoardSettings />
+      <TradeSettings />
       <ServiceSettings />
       <ImageSettings />
       <VibratorSettings />
-      <TradeSettings />
     </StyledSettingsSection>
   );
 };
