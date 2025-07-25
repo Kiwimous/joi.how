@@ -95,7 +95,7 @@ export const VibratorSettings = () => {
   }, [client, connection, host, port, setConnection, setDevices, setError]);
 
   return (
-    <SettingsTile label={'Vibrator'}>
+    <SettingsTile label={'Vibrator'} style={{ gridColumn: '1 / -1' }}>
       <Surrounded
         trailing={
           <IconButton
