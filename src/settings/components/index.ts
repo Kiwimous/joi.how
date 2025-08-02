@@ -4,6 +4,7 @@ export * from './DurationSettings';
 export * from './EventSettings';
 export * from './HpynoSettings';
 export * from './ImageSettings';
+export * from './LovenseSettings';
 export * from './PaceSettings';
 export * from './PlayerSettings';
 export * from './ServiceSettings';

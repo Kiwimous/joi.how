@@ -4,6 +4,7 @@ export * from './images';
 export * from './intensity';
 export * from './localstorage';
 export * from './looping';
+export * from './lovense';
 export * from './range.d';
 export * from './refs';
 export * from './round';
