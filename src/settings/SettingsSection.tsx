@@ -9,7 +9,6 @@ import {
   ServiceSettings,
   BoardSettings,
   VibratorSettings,
-  LovenseSettings,
   TradeSettings,
 } from './components';
 import { ContentSection } from '../common';
@@ -32,7 +31,6 @@ export const SettingsSection = () => {
       <TradeSettings />
       <ServiceSettings />
       <VibratorSettings />
-      <LovenseSettings />
     </StyledSettingsSection>
   );
 };

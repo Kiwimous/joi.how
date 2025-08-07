@@ -12,7 +12,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       <ImageProvider>
         <LocalImageProvider>
           <VibratorProvider>
-              <App />
+            <App />
           </VibratorProvider>
         </LocalImageProvider>
       </ImageProvider>
